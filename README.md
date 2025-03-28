@@ -6,6 +6,8 @@ just do `npm i` after cloning and u should be 👍
 
 ## usage
 
-`npm run run`
+create `files` directory and put html files in it
 
-then put files in `files/` directory
+then `npm run run`
+
+(note: only html files will be refreshed)
