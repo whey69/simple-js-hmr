@@ -63,6 +63,11 @@ websocket.on('connection', socket => {
 });
 
 app.get("*", (req, res) => {
+    if (req.url == "/") {
+        res.redirect("/index");
+        return
+    }
+
     var origin = req.url;
 
     req.url = processUrl(req.url);
