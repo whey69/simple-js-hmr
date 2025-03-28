@@ -1,0 +1,19 @@
+{
+  "name": "httpreload",
+  "version": "1.0.0",
+  "description": "live reload",
+  "license": "ISC",
+  "author": "supchik",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mime-types": "^3.0.1",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.1"
+  }
+}
