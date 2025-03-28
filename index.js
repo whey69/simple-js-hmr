@@ -93,6 +93,11 @@ app.get("*", (req, res) => {
                     }
                     if (event.code == 1006) {
                         console.log("lost connection to server. reload page to try again");
+                        document.body.innerHTML += \`
+                        <div style="position: absolute; bottom: 10px; left: 10px; background-color: #2c0b0e; border: 1px solid 842029; border-radius: .25rem; padding: 1rem; font-family: sans-serif; z-index: 1000;"> 
+                            <p style="color: #ea868f;">Connection Closed</p>
+                        </div>
+                        \`
                     }
                 })
             </script>
